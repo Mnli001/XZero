@@ -1,0 +1,30 @@
+[
+  {
+    "id": "src_96f17b75",
+    "title": "FVG entry model \u2014 discount only",
+    "kind": "note",
+    "uri": "",
+    "content": "Fair Value Gap entries are highest-quality when price is in discount (below 50% equilibrium) for longs. Require a liquidity sweep and displacement (CHoCH/BOS) before the gap. Invalidate if price closes through the gap origin. Expectation is reaction, not certainty.",
+    "tags": [
+      "fvg",
+      "discount",
+      "sweep",
+      "choch"
+    ],
+    "added_at": "2026-09-11T18:38:13.249210+00:00"
+  },
+  {
+    "id": "src_6d9d9adf",
+    "title": "Liquidity sweep + MSS reversal framework",
+    "kind": "note",
+    "uri": "",
+    "content": "Classic ICT reversal: sweep of prior-day or session liquidity, then market structure shift on the lower timeframe, then entry on the retest of the displacement leg (FVG/OB). Skip if no sweep occurred \u2014 chasing displacement without swept liquidity underperforms. Always define invalidation before entry.",
+    "tags": [
+      "sweep",
+      "mss",
+      "choch",
+      "retest"
+    ],
+    "added_at": "2026-09-11T18:38:13.258122+00:00"
+  }
+]
