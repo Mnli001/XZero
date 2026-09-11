@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-terminal-bg text-terminal-text;
+}
+
+input, select, textarea {
+  @apply bg-terminal-bg border border-terminal-border rounded px-3 py-2 text-sm w-full focus:outline-none focus:border-terminal-info;
+}
+
+button.btn {
+  @apply px-4 py-2 rounded text-sm font-bold border border-terminal-border bg-terminal-border/60 hover:bg-terminal-border disabled:opacity-40 disabled:cursor-not-allowed;
+}
+
+button.btn-primary {
+  @apply px-4 py-2 rounded text-sm font-bold bg-terminal-accent text-black hover:brightness-110 disabled:opacity-40 disabled:cursor-not-allowed;
+}
+
+button.btn-danger {
+  @apply px-4 py-2 rounded text-sm font-bold bg-terminal-down/20 text-terminal-down border border-terminal-down hover:bg-terminal-down/30 disabled:opacity-40 disabled:cursor-not-allowed;
+}
+
+.card {
+  @apply bg-terminal-panel border border-terminal-border rounded p-4;
+}
+
+table.term {
+  @apply w-full text-sm font-mono;
+}
+table.term th {
+  @apply text-left text-terminal-dim font-normal text-xs uppercase py-2 border-b border-terminal-border;
+}
+table.term td {
+  @apply py-1.5 border-b border-terminal-border/50;
+}
